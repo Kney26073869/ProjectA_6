@@ -6,7 +6,7 @@ OC PROJET6 Participez à la communauté
 * GNS3
 
 # Topologie
-![topologie](https://user-images.githubusercontent.com/98970674/152829919-108d36c2-2cc6-4ec8-80a4-dc1675cd0c06.png)
+![topologie](https://user-images.githubusercontent.com/99196130/152831223-a28cc9ab-d326-4dc1-aecf-ab64dee3733e.png)
 
 # Description
 * Ce projet a pour but de sauvegarder/restaurer un site wordpress et sa base de données
