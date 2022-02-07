@@ -121,8 +121,3 @@ for command in commands:
 ssh.close()
 
 print("Fin du traitement de la sauvegarde avec succes")
-
-
-
-
-
