@@ -31,11 +31,11 @@ import paramiko
 print("Mise en forme des variables")
 
 # Informations concernant le traitement
-restore_folder = '/home/******/Restore'
+path_restore = '/home/******/Restore'
 target_day = '/home/******/Documents'
 restore_folder = 'Restore'
 targz = '.tar.gz'
-dest_restore = restore_folder+'/'+restore_folder+targz
+dest_restore = path_restore+'/'+restore_folder+targz
 localpath = dest_restore 
 path_wordpress = target_day+'/'+restore_folder+targz	#wordpress
 path = path_wordpress
