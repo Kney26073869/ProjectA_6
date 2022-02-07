@@ -151,7 +151,7 @@ OC PROJET6 Participez à la communauté
 - Éditer le script pour enregistrer les différents paramètres dans les parties concernées
     - python3 Backup.py
 
-##Automatisation du script du script avec Crontab pour une sauvegarde journalière
+## Automatisation du script du script avec Crontab pour une sauvegarde journalière
 - Ex : Tous les jours à 23h59
     - Terminal 
         - crontab -e
