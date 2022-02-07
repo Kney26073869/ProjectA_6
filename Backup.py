@@ -122,10 +122,3 @@ print("Suppression du repetoire compresse contenant la sauvegarde journaliere")
 os.remove(backup_to_ftp_targz)
 
 print("Fin du traitement de la sauvegarde avec succes")
-
-
-
-
-
-
-
