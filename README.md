@@ -139,7 +139,7 @@ OC PROJET6 Participez à la communauté
                     - Transfert des sauvegardes entre le serveur FTP et le client
 
 # Mise en place des scripts
-## Serveur wordpress/mysql : backup.py
+## Serveur wordpress/mysql : Backup.py
 - Les étapes pour pouvoir exécuter le script
     - apt install python3-pip
     - apt-get install libffi-dev
@@ -147,9 +147,9 @@ OC PROJET6 Participez à la communauté
 - Télécharger le script ou effectuer un copier/coller du contenu dans un éditeur de texte
 - Copier le script à la racine du disque
 - Mettre les droits d'exécution si nécessaire
-    - chmod +x backup.py
+    - chmod +x Backup.py
 - Éditer le script pour enregistrer les différents paramètres dans les parties concernées
-    - python3 backup.py
+    - python3 Backup.py
 
 ## Automatisation du script du script avec Crontab pour une sauvegarde journalière
 - Ex : Tous les jours à 23h59
@@ -158,10 +158,10 @@ OC PROJET6 Participez à la communauté
             - L'éditeur de texte apparaît 
                 - #m h  dom mon dow   command
                 - #Tous les jours a 11h59
-                - 59 11 * * * python3 /root/backup.py >> /home/adminstal/Documents/log.file 2>&1
+                - 59 11 * * * python3 /root/Backup.py >> /home/adminstal/Documents/log.file 2>&1
                     - systemctl restart cron 
 
-## Serveur FTP : restore.py
+## Serveur FTP : Restore.py
 - Les étapes pour pouvoir exécuter le script
     - apt install python3-pip
     - apt-get install libffi-dev
@@ -169,7 +169,7 @@ OC PROJET6 Participez à la communauté
 - Télécharger le script ou effectuer un copier/coller du contenu dans un éditeur de texte
 - Copier le script à la racine du disque
 - Mettre les droits d'exécution si nécessaire
-    - chmod +x restore.py
+    - chmod +x Restore.py
 - Éditer le script pour enregistrer les différents paramètres dans les parties concernées
 - Sur le serveur wordpress/mysql
     - nano /etc/sudoers
@@ -178,4 +178,4 @@ OC PROJET6 Participez à la communauté
         - MariaDB [()]> CREATE USER 'xxxxxx'@'localhost' IDENTIFIED BY 'xxxxxx';
         - MariaDB [()]> QUIT;
 - Sur le serveur FTP
-    - python3 restore.py
+    - python3 Restore.py
