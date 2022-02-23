@@ -95,7 +95,7 @@ OC PROJET6 Participez à la communauté
     - serveur SSH
     - utilitaires usuels du système
         - apt-get update && apt-get upgrade
-        - apt install vsftd
+        - apt install vsftpd
         - cd /etc
         - cp vsftpd.conf vsftpd.conf.bak
         - nano vsftpd.conf (modification du fichier)
