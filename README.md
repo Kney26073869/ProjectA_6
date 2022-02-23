@@ -139,7 +139,7 @@ OC PROJET6 Participez à la communauté
                     - Transfert des sauvegardes entre le serveur FTP et le client
 
 # Mise en place des scripts
-## Serveur wordpress/mysql : Backup.py
+## Serveur wordpress/mysql : backup.py
 - Les étapes pour pouvoir exécuter le script
     - apt install python3-pip
     - apt-get install libffi-dev
@@ -161,7 +161,7 @@ OC PROJET6 Participez à la communauté
                 - 59 11 * * * python3 /root/Backup.py >> /home/adminstal/Documents/log.file 2>&1
                     - systemctl restart cron 
 
-## Serveur FTP : Restore.py
+## Serveur FTP : restore.py
 - Les étapes pour pouvoir exécuter le script
     - apt install python3-pip
     - apt-get install libffi-dev
@@ -169,7 +169,7 @@ OC PROJET6 Participez à la communauté
 - Télécharger le script ou effectuer un copier/coller du contenu dans un éditeur de texte
 - Copier le script à la racine du disque
 - Mettre les droits d'exécution si nécessaire
-    - chmod +x backup.py
+    - chmod +x restore.py
 - Éditer le script pour enregistrer les différents paramètres dans les parties concernées
 - Sur le serveur wordpress/mysql
     - nano /etc/sudoers
