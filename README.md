@@ -149,7 +149,7 @@ OC PROJET6 Participez à la communauté
 - Mettre les droits d'exécution si nécessaire
     - chmod +x backup.py
 - Éditer le script pour enregistrer les différents paramètres dans les parties concernées
-    - python3 Backup.py
+    - python3 backup.py
 
 ## Automatisation du script du script avec Crontab pour une sauvegarde journalière
 - Ex : Tous les jours à 23h59
@@ -158,7 +158,7 @@ OC PROJET6 Participez à la communauté
             - L'éditeur de texte apparaît 
                 - #m h  dom mon dow   command
                 - #Tous les jours a 11h59
-                - 59 11 * * * python3 /root/Backup.py >> /home/adminstal/Documents/log.file 2>&1
+                - 59 11 * * * python3 /root/backup.py >> /home/adminstal/Documents/log.file 2>&1
                     - systemctl restart cron 
 
 ## Serveur FTP : restore.py
@@ -178,4 +178,4 @@ OC PROJET6 Participez à la communauté
         - MariaDB [()]> CREATE USER 'xxxxxx'@'localhost' IDENTIFIED BY 'xxxxxx';
         - MariaDB [()]> QUIT;
 - Sur le serveur FTP
-    - python3 Restore.py
+    - python3 restore.py
