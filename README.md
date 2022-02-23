@@ -32,7 +32,7 @@ OC PROJET6 Participez à la communauté
         - rm latest.tar.gz
         - cp -r wordpress/* /var/www/html
         - rm -r wordpress
-        - chmod -R 755 /var/www/html
+        - chmod -R 777 /var/www/html
         - cp index.html index.html.bak
         - rm index.html 
         - mysql_secure_installation
@@ -46,7 +46,7 @@ OC PROJET6 Participez à la communauté
         - mysql -u root -proot
             - MariaDB [()]> CREATE DATABASE xxxxxx;
             - MariaDB [()]> CREATE USER 'xxxxxx'@'localhost' IDENTIFIED BY 'xxxxxx';
-            - MariaDB [()]> GRANT ALL PRIVILEGES ON wordpressdb.* TO 'wpuser'@'localhost';
+            - MariaDB [()]> GRANT ALL PRIVILEGES ON xxxxxx.* TO 'xxxxxx'@'localhost';
             - MariaDB [()]> FLUSH PRIVILEGES;
             - MariaDB [()]> QUIT;
         - nano /etc/hosts
