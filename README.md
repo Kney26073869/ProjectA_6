@@ -154,7 +154,7 @@ OC PROJET6 Participez à la communauté
 ## Automatisation du script du script avec Crontab pour une sauvegarde journalière
 - Ex : Tous les jours à 23h59
     - Terminal 
-        - crontab -e
+        - crontab -e : Choix de l'éditeur de texte
             - L'éditeur de texte apparaît 
                 - #m h  dom mon dow   command
                 - #Tous les jours a 11h59
