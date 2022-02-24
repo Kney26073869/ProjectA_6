@@ -112,7 +112,7 @@ commands =['cd /home/******/Documents/ && tar -xzvf /home/******/Documents/Resto
            'cd /home/******/Documents/backup_to_ftp/ && tar -xzvf /home/******/Documents/backup_to_ftp/wp_html.tar.gz',
            'sudo cp -R /home/******/Documents/backup_to_ftp/var/www/html /var/www/',
            'mysql -u ****** -p****** -e "CREATE DATABASE ******;"',
-           'mysql -u ****** -p****** ****** < /home/******/Documents/backup_to_ftp/dumpbddwp.sql',
+           'mysql -u ****** -p****** ****** < /home/******/Documents/backup_to_ftp/******.sql',
            'rm -r /home/******/Documents/backup_to_ftp']
 for command in commands:
     stdin, stdout, stderr = ssh.exec_command(command)
