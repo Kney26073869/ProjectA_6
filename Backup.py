@@ -65,7 +65,7 @@ time.sleep(1)
 
 # Exportation de la base de donnee wordpress
 print("DUMP de la BDD")
-os.system("mysqldump -u "+usermysql+" -p"+pwdmysql+" "+databasename+" > "+backup_folder+"/"+bddbackupname+".sql")
+os.system("mysqldump -u "+usermysql+" -p"+pwdmysql+" "+databasemysql+" > "+backup_folder+"/"+bddbackupname+".sql")
 
 time.sleep(1)
 
