@@ -60,7 +60,7 @@ print("Traitement de la sauvegarde")
 
 # Création du répertoitre de restauration
 print("Creation du repertoire de restauration")
-os.makedirs(restore_folder, exist_ok=True)
+os.makedirs(path_restore, exist_ok=True)
 
 time.sleep(1)
 
@@ -111,8 +111,8 @@ commands =['cd /home/******/Documents/ && tar -xzvf /home/******/Documents/Resto
            'rm /home/******/Documents/Restore.tar.gz',
            'cd /home/******/Documents/backup_to_ftp/ && tar -xzvf /home/******/Documents/backup_to_ftp/wp_html.tar.gz',
            'sudo cp -R /home/******/Documents/backup_to_ftp/var/www/html /var/www/',
-           'mysql -u wpuser -pwpuserpw -e "CREATE DATABASE wordpressdb;"',
-           'mysql -u wpuser -pwpuserpw wordpressdb < /home/******/Documents/backup_to_ftp/dumpbddwp.sql',
+           'mysql -u ****** -p****** -e "CREATE DATABASE ******;"',
+           'mysql -u ****** -p****** ****** < /home/******/Documents/backup_to_ftp/dumpbddwp.sql',
            'rm -r /home/******/Documents/backup_to_ftp']
 for command in commands:
     stdin, stdout, stderr = ssh.exec_command(command)
